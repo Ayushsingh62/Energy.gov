@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* <style>
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-</style> */
+ 
 }
 .container{
     width: 100%;
@@ -14,16 +12,18 @@
     font-family: "Karla", sans-serif;;
     flex-direction: column;
 }
+
 .navbar{
     width: 100%;
-    height: 40px;
+    height:60px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
     background-color:rgb(31,31,31);
 ul{
-   width: 52%;
+   width: 50%;
+   height: 40px;
    display: flex;
    list-style: none;
    align-items: center;
@@ -31,12 +31,12 @@ ul{
    margin-left: 700px;
    gap: 10px;
   li{
-width: 10%;
+width: 11%;
 line-height: normal;
 display: flex;
 align-items: center;
 justify-content: center;
-font-size: 14px;
+font-size: 13px;
 color: white;
   }
 img{
@@ -62,6 +62,7 @@ img{
             margin-left: 70px;
         }
     }
+   
     ul{
         width: 75%;
         height: auto;
@@ -80,7 +81,12 @@ img{
             }
         }
     }
-}
+} .section{
+        display: none;
+    }
+    .energy{
+        display: none;
+    }
 .navbar-two ul:last-child{
     margin-right: 30px;
     img{
@@ -239,13 +245,18 @@ margin-right: 100px;
             color: rgb(18,126,168);
             font-weight: 700;
         }
-        hr{
+   
+        span{
+         hr{
             height: 350px;
             width: 3px;
             color: rgb(184,195,188);
             border: 2px solid;
             margin-left: 100px;
            
+        }
+        }em{
+           display: none;
         }
     }
 }
@@ -804,3 +815,188 @@ h3{
     margin-right:900px;
 }
 
+@media (max-width: 768px){
+    .conatiner{
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar-two ul{
+        display: none;
+    }
+     .navbar-two .image {
+        display: none;
+    }
+   
+    .energy{
+display: inline;
+width: 70%;
+img{
+    height: 40px;
+    width: 250px;
+}
+    }
+    .ssection{
+        display: inline;
+        width:15%;
+        justify-content: space-between;
+        display: flex;
+            img{
+                height: 50px;
+                width: 40px;
+
+            }
+        
+
+        }
+        .image-section{
+            flex-direction: column;
+            width: 100%;
+           
+            .first-image{
+        width: 80%; 
+        height: 500px;
+        h1{
+            color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    margin-left: 100px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 40px;
+    flex-wrap: wrap;
+    br{
+        display: none;
+    }
+        }
+        }
+         .second-image{
+            width: 100%;
+          
+.one{
+            width: 80%;
+            height: 500px;
+        }
+.two{
+    width: 80%;
+    background-image: url(./images/CESER\ Hurricane\ Response-Homepage\ FeaturedImg\ 4.png);
+    height: 500px;
+    img{
+        display: none;
+    }
+}
+         } 
+         
+        }
+        .second-section{flex-direction: column;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+            justify-content: center;
+            img{
+                height: 150px;
+                width: 250px;
+            }
+            h1{
+              align-items: center;
+              justify-content: center;
+              margin-left: 900px;
+                margin-top: 50px;
+                font-size: 30px;
+                font-weight: 500;
+                color: rgb(41,41,41);
+              width: 100%;
+            }
+           
+        span{display: none;
+            
+        }
+       
+            
+            
+        
+
+            .section{
+                flex-direction: column;
+          
+        
+            }
+        }
+        .Blog-section{
+            flex-direction: column;
+            width: 90%;
+            height: auto;
+        }
+        .Blog {
+            width: 90%;  flex-direction: column;
+            margin: 0 auto; 
+            height: auto;
+            flex-wrap: wrap;
+        }
+    
+        .heading {
+            margin-right: 0; 
+            text-align: center;
+            
+        }
+    
+        .heading h1 {
+            font-size: 32px; 
+        }
+    
+        .box {
+            flex-direction: column; 
+            align-items: center; 
+        }
+    
+        .card-one,
+        .card-two,
+        .card-three {
+            width: 90%; 
+            height: auto; 
+        }
+    
+        .card-one a,
+        .card-two a,
+        .card-three a {
+            margin-left: 0; 
+            justify-content: center; 
+        }
+    
+        .second-heading {
+            margin-left: 0; 
+            text-align: center; 
+        }
+    
+        .para,
+        .para-twoo {
+            flex-direction: column; 
+            align-items: center; 
+        }
+    
+        .mail {
+            width: 90%; /
+            margin: 20px auto; 
+        }
+    
+        .footer {
+            flex-direction: column; 
+        }
+    
+        .first-sectionn,
+        .second-sectionnn {
+            flex-direction: column; 
+            align-items: center; 
+            margin: 20px 0; 
+        }
+    
+        .priority-box {
+            flex-direction: column;
+            align-items: center; 
+        }
+    }
